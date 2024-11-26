@@ -10,7 +10,7 @@ export function ThemeContextProvider({ children }) {
     console.log("Updated theme:",theme === "light" ? "dark" : "light");
     setTheme(theme === "light" ? "dark" : "light");
   };
-  console.log(theme);
+  
   return (
     <div>
       <ThemeContextProvider value={{ theme, toggleTheme: toggleTheme }}>
